@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<title>Html5 Upload File</title>
+		<link href="style.css" rel="stylesheet" type="text/css" />		
+
+		
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+		<script type="text/javascript" src="html5upload.js"></script>
+       <script type="text/javascript">
+            $(document).ready(function(){
+                console.log(window.localStorage);
+                console.log(localStorage);
+                $("#qzfile").qzinfo({infoID:"qzinfo"});
+                $("#submitUpload").bind('click', function() {
+                    $("#qzfile").qzupload({MAXSIZE : 10000000},{"token":"123", "desc":"456"});
+                });
+            });
+       </script>
+       
+
+	</head>
+	
+	<body>
+
+        <h2>HTML5 Upload File</h2>
+        <div id="upload">
+            <form id="file_upload" name="Filetrans" enctype="multipart/form-data" method="post" action="#">
+                
+                <div id="uploadform" >
+                    <div class="row">
+                      <input id="qzfile" type="file" name="fileToUpload" id="fileToUpload" multiple/>
+                    </div>
+                    
+                    <div id="fileName"></div>
+                    <div id="fileSize"></div>
+                    <div id="fileChunk"></div>
+                    
+                    <div class="row">
+                        <input type='button' id="submitUpload" value="submit" />
+                    </div>
+                    <div id="qzinfo">
+                        
+                    </div>
+                    
+                    <div id="progressNumber"></div>
+                    <div id="progressdescript"></div>				
+                    <div id="underprogressBar"></div>
+                    <div id="progressBar"></div>
+               </div>
+            </form>
+        </div>
+
+    </body>
+</html>

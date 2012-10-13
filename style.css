@@ -1,0 +1,63 @@
+ .row
+{
+	margin: 0 0 10px 0;
+}
+
+.qztable{
+    border-collapse: collapse;
+}
+
+.qztable th{
+    background: #FFD700;
+    padding: 8px;
+}
+
+.qztable tbody tr{
+    background: #FFD700;
+}
+
+.qztable tbody td{
+    padding: 8px;
+}
+
+#submitUpload
+{
+	margin: 5px 0 0 0 ;
+	padding: 5px 10px 5px 10px;
+	border: 1px solid #ccc;
+	font-size: 13pt;
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	background-image: -moz-linear-gradient(top, #cc6600, #b55a00);
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#cc6600), to(#b55a00));        
+}
+
+#submitUpload:hover 
+{
+	background-image: -moz-linear-gradient(top, #844200, #844200);
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#844200), to(#844200));	
+}
+
+.underprogressBar
+{
+	width: 355px;
+	height: 14px;
+	border: 1px solid #cccccc;
+    border-radius:10px;
+  	-moz-border-radius: 10px;       
+	background-image: -moz-linear-gradient(top, #dddddd, #d7d7d7);
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#dddddd), to(#d7d7d7));        
+}
+
+.progressBar        
+{         
+	position: relative;
+	top: -16px;
+	height: 14px;
+	border: 1px solid #cccccc;
+ 	display: none;
+    border-radius:10px;
+  	-moz-border-radius: 10px;       
+	background-image: -moz-linear-gradient(top, #66cc00, #4b9500);
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#66cc00), to(#4b9500));     
+}
